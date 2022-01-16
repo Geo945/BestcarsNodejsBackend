@@ -86,7 +86,6 @@ exports.addPerson = (req, res, next) => {
                         //save user
                         user.save()
                             .then((response) => {
-                                //TODO: send registration email
                                 const mailOptions = {
                                     from: process.env.user,
                                     to: req.body.email,
